@@ -1,0 +1,52 @@
+﻿<Errors
+  language="C#"
+  usings="JetBrains.ReSharper.Psi.CSharp.Tree;JetBrains.ReSharper.Daemon;JetBrains.ReSharper.Daemon.UsageChecking;">
+
+  <StaticSeverityGroups>
+    <Group name="ReSharper validation errors" key="ReSharperValidatorErrors"/>
+  </StaticSeverityGroups>
+
+  <Error staticGroup="ReSharperValidatorErrors" name="IncorrectReference">
+    <Parameter type="ITreeNode" name="node"/>
+    <Parameter type="IClass" name="cls"/>
+    <Parameter type="string" name="description"/>
+    <Message value="{0}">
+      <Argument>myDescription</Argument>
+    </Message>
+    <Range>myNode.GetHighlightingRange()</Range>
+    <Behavour overlapResolvePolicy="ERROR"/>
+    <QuickFix>AddDependencyNearby</QuickFix>
+  </Error>
+   
+  <Error staticGroup="ReSharperValidatorErrors" name="IncorrectNamespaceNesting">
+    <Parameter type="IDeclaration" name="namespaceDeclaration"/>
+    <Parameter type="ITreeNode" name="node"/>
+    <Parameter type="string" name="properNamespacePrefix"/>
+    <Message value="Namespace name be prefixed with '{0}' to be zoned correctly">
+      <Argument>myProperNamespacePrefix</Argument>
+    </Message>
+    <Range>myNode.GetDocumentRange()</Range>
+    <Behavour overlapResolvePolicy="ERROR"/>
+  </Error>
+
+  <Error staticGroup="ReSharperValidatorErrors" name="UndefinedAxis">
+    <Parameter type="IUserDeclaredTypeUsage" name="typeUsage"/>
+    <Parameter type="string" name="dependencyClass"/>
+    <Parameter type="string" name="axisAttribute"/>
+    <Message value="'{0}' is not attributed with '{1}'">
+      <Argument>myDependencyClass</Argument>
+      <Argument>myAxisAttribute</Argument>
+    </Message>
+    <Range>myTypeUsage.GetDocumentRange()</Range>
+    <Behavour overlapResolvePolicy="ERROR"/>
+  </Error>
+
+  <Error staticGroup="ReSharperValidatorErrors" name="RedundantDependencySpecification">
+    <Parameter type="IUserDeclaredTypeUsage" name="typeUsage"/>
+    <Message value="Zone requirement is redundant. Code is already marked with this zone."/>
+    <Range>myTypeUsage.GetDocumentRange()</Range>
+    <Behavour overlapResolvePolicy="ERROR"/>
+  </Error>
+
+
+</Errors>

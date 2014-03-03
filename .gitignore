@@ -1,0 +1,17 @@
+*.dll
+*.exe
+*.cmd
+*.pdb
+*.suo
+*.user
+*.cache
+*.map
+*.swp
+.DS_Store
+
+packages/**/*
+
+DotZForMef/bin/Debug/*
+DotZForMef/bin/Release/**/*
+
+**/obj/**/*
