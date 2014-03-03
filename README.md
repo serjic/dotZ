@@ -7,7 +7,7 @@ Keep features independent and application configurable with dotZ
 ====
 
 ### Zone != Dll
-Dependencies control in .Net solutions is tightly coupled with deployment control.
+Dependencies control in .Net solutions is tightly coupled with deployment control. With dotZ it's no more true.
 
 ### Mark namespaces
 Meta-class declarations to mark your code with features.
