@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>DotZ</id>
+    <version>0.8</version>
+    <authors>Serjic</authors>
+    <owners>Serjic</owners>
+    <title>Zones framework</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Zones framework support in ReSharper code analysis and other features</description>
+    <projectUrl>https://github.com/serjic/dotZ</projectUrl>
+    <iconUrl>https://raw.github.com/serjic/dotZ/master/logo.png</iconUrl>
+    <copyright>Copyright &#x00A9; 2014 Serjic</copyright>
+    <tags>dependencies zones</tags>
+    <releaseNotes>Nodes here</releaseNotes>
+    <dependencies>
+      <dependency id="Resharper" version="[8.1,8.3)"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\DotZ\DotZ\bin\$configuration$\8.1\*.*" target="ReSharper\v8.1\plugins"/>
+    <file src="..\DotZ\DotZ\bin\$configuration$\8.1\*.*" target="ReSharper\v8.2\plugins"/>
+  </files>
+</package>

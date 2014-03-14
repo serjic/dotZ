@@ -17,15 +17,14 @@ using JetBrains.ReSharper.Psi.Resolve;
 using JetBrains.ReSharper.Psi.Tree;
 using JetBrains.Util;
 using JetBrains.ReSharper.Psi.CSharp.Tree;
-using JetBrains.ReSharper.Daemon;
 using JetBrains.ReSharper.Daemon.UsageChecking;
 
 namespace DotZ.Zones.Inspections
 {
   [JetBrains.Application.ShellComponent]
-  class SeverityRegistrar1058356543Component
+  class SeverityRegistrar1699296753Component
   {
-    public SeverityRegistrar1058356543Component(Lifetime lifetime, JetBrains.ReSharper.Daemon.IQuickFixes table)
+    public SeverityRegistrar1699296753Component(Lifetime lifetime, JetBrains.ReSharper.Daemon.IQuickFixes table)
     {
       table.RegisterQuickFix<IncorrectReferenceError>(lifetime, h => new AddDependencyNearby(h), typeof(AddDependencyNearby), null, BeforeOrAfter.Before);
     }

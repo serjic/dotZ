@@ -1,6 +1,6 @@
 ﻿<Errors
   language="C#"
-  usings="JetBrains.ReSharper.Psi.CSharp.Tree;JetBrains.ReSharper.Daemon;JetBrains.ReSharper.Daemon.UsageChecking;">
+  usings="JetBrains.ReSharper.Psi.CSharp.Tree;JetBrains.ReSharper.Daemon.UsageChecking;">
 
   <StaticSeverityGroups>
     <Group name="ReSharper validation errors" key="ReSharperValidatorErrors"/>

@@ -1,0 +1,1 @@
+nuget pack DotZ.nuspec -NoPackageAnalysis -verbosity detailed -o . -p Configuration="Debug"
